@@ -1,45 +1,45 @@
 # 🔐 AuthRegisterSystem
 
-**A lightweight register & login system for [VeoZaxAPI](https://info.veozax.xyz).**
+**A lightweight register & login system for [VeoZaxAPI](https://github.com/VeoZaxOfficial/Multiversion-API-0.14.x-0.15.10-1.1.x-VeoZax-API-Build-3.0).**
 
 Players have to `/register` and `/login` before they can move, chat, build, fight or run commands. Works as a `.phar` or as a plain source folder.
 
-> Made by **VeoZax** for VeoZaxAPI — the legacy-friendly PocketMine-MP API.
+> Made by **VeoZax** for VeoZaxAPI - PocketMine-MP.
 
 ---
 
 ## ✨ Features
 
 - **Register / Login / Change password** with simple in-game commands
-- **Full lockdown until logged in** — unauthenticated players cannot:
+- **Full lockdown until logged in** - unauthenticated players cannot:
   - move
   - chat (and they don't receive chat from others either)
   - use any command except `/register`, `/login` and `/changepassword`
   - take damage, break or place blocks, or drop items
-- **Brute-force protection** — 3 wrong passwords and the player is kicked
-- **Auto-kick on timeout** — players who haven't registered or logged in within **60 seconds** are kicked
-- **Message filter** — messages from other plugins are hidden from players who aren't logged in yet, so the auth prompts stay visible
-- **Admin command** — `/auth remove <player>` lets operators delete a player's stored account (e.g. for a forgotten password)
-- **Folder or phar** — runs from a `.phar` or straight from the source folder
-- Zero dependencies, no database — data is stored in `players.yml`
+- **Brute-force protection** - 3 wrong passwords and the player is kicked
+- **Auto-kick on timeout** - players who haven't registered or logged in within **60 seconds** are kicked
+- **Message filter** - messages from other plugins are hidden from players who aren't logged in yet, so the auth prompts stay visible
+- **Admin command** - `/auth remove <player>` lets operators delete a player's stored account (e.g. for a forgotten password)
+- **Folder or phar** - runs from a `.phar` or straight from the source folder
+- Zero dependencies, no database - data is stored in `players.yml`
 
 ---
 
 ## 📋 Requirements
 
-- A server running **VeoZaxAPI** (`api: ["VeoZaxAPI"]`)
+- A server running using **VeoZaxAPI**
 
 ---
 
 ## 📥 Installation
 
 ### As a `.phar`
-1. Download the latest `AuthRegisterSystem.phar` from the [Releases](../../releases) page.
+1. Download the latest `AuthRegisterSystem.phar`
 2. Drop it into your server's `plugins/` folder.
 3. Restart the server.
 
 ### As a source folder
-1. Download or clone this repository.
+1. Download this repository as zip.
 2. Put the `AuthRegisterSystem` folder into your server's `plugins/` folder.
    The folder must contain `plugin.yml` and a `src/` directory directly inside it.
 3. Open `veozaxapi.yml` in your server's root folder and enable folder loading:
@@ -47,7 +47,7 @@ Players have to `/register` and `/login` before they can move, chat, build, figh
    developer:
      folder-plugin-loader: true
    ```
-4. Restart the server. (A reload is not enough — this setting is read at startup.)
+4. Restart the server. (A reload is not enough - this setting is read at startup.)
 
 ---
 
@@ -101,18 +101,32 @@ Password hashing (`password_hash()` / `password_verify()`) is a good candidate f
 
 ## 🤝 Contributing
 
-Bug reports and pull requests are welcome. Please open an [issue](../../issues) describing the problem and your VeoZaxAPI version.
+Issues and pull requests are welcome.
+
+If you're reporting a bug, please include your PocketMine-MP version and relevant server log output.
 
 ---
 
-## 📺 Follow VeoZax
+## Credits
 
-- ▶️ YouTube: [@VeoZax](https://www.youtube.com/@VeoZax)
-- 💬 Discord: [discord.gg/dCzgPYam2J](https://discord.gg/dCzgPYam2J)
-- 🌐 Website: [info.veozax.xyz](https://info.veozax.xyz)
+Developed by **[VeoZax](https://github.com/VeoZaxOfficial)**
 
 ---
 
-## 📄 License
+## License
 
-See the [LICENSE](LICENSE) file.
+Released under the [MIT License](LICENSE). Feel free to use, modify, and redistribute with credit to the author VeoZax.
+
+---
+
+## 🔗 Links
+
+<p align="left">
+  <a href="https://info.veozax.xyz/"><img src="https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/></a>
+  <a href="https://www.youtube.com/channel/UC33-nbRHQn-3H56aQc0sanA"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a>
+  <a href="https://discord.gg/dCzgPYam2J"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/></a>
+  <a href="https://www.instagram.com/veozax"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+  <a href="https://www.tiktok.com/@veozaxofficial"><img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok"/></a>
+  <a href="https://www.facebook.com/VeoZax/"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"/></a>
+  <a href="https://github.com/VeoZaxOfficial"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+</p>
