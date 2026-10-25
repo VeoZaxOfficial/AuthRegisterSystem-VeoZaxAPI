@@ -1,0 +1,5 @@
+# AuthRegisterSystem configuration
+# Currently a placeholder - the plugin doesn't read any settings from here
+# yet, but it's saved to your data folder on first run for future use.
+
+config-version: 1

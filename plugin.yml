@@ -1,0 +1,26 @@
+name: AuthRegisterSystem
+author: VeoZax
+version: "1.0.0"
+description: Player authentication (register/login) plugin for VeoZaxAPI.
+main: AuthRegisterSystem\Main
+api: ["VeoZaxAPI"]
+
+commands:
+  register:
+    description: Register your account with a password.
+    usage: "/register <password>"
+  login:
+    description: Log in with your password.
+    usage: "/login <password>"
+  changepassword:
+    description: Change your account password.
+    usage: "/changepassword <newpassword> <newpassword>"
+  auth:
+    description: Admin command to remove a player's registered accounts.
+    usage: "/auth remove <player>"
+    permission: authregistersystem.admin
+
+permissions:
+  authregistersystem.admin:
+    description: Allows use of the /auth admin command.
+    default: op
