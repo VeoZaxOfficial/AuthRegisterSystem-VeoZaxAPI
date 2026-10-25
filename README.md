@@ -34,7 +34,8 @@ Players have to `/register` and `/login` before they can move, chat, build, figh
 ## 📥 Installation
 
 ### As a `.phar`
-1. Download the latest `AuthRegisterSystem.phar`
+1. Download the `AuthRegisterSystem` plugin from the repo as Zip or from MediaFire.
+- MediaFire Download Link = [AuthRegisterSystem.zip](https://www.mediafire.com/file/t3qge6fzs6dqt7s/AuthRegisterSystem_-_VeoZaxAPI.zip/file)
 2. Drop it into your server's `plugins/` folder.
 3. Restart the server.
 
